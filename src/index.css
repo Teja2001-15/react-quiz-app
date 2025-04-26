@@ -1,0 +1,148 @@
+:root {
+  --primary: #4a6da7;
+  --primary-dark: #3a5a8c;
+  --secondary: #f5f5f5;
+  --text: #333;
+  --error: #d9534f;
+  --success: #5cb85c;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--primary);
+}
+
+.header h1 {
+  color: var(--primary);
+  margin-bottom: 5px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+  color: #777;
+}
+
+.main-content {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+}
+
+.welcome-screen {
+  text-align: center;
+  padding: 30px;
+}
+
+.welcome-screen h2 {
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.start-button, .submit-button, .restart-button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.2s;
+}
+
+.start-button:hover, .submit-button:hover, .restart-button:hover {
+  background-color: var(--primary-dark);
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.quiz-progress {
+  text-align: right;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.question-card {
+  background-color: var(--secondary);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.question-text {
+  margin-bottom: 20px;
+  color: var(--text);
+  font-size: 18px;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}
+
+.option.selected {
+  background-color: #e6f2ff;
+  border-color: var(--primary);
+}
+
+.option-indicator {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.option-text {
+  flex: 1;
+}
+
+.results {
+  text-align: center;
+  padding: 30px;
+}
+
+.results h2 {
+  color: var(--primary);
+  margin-bottom: 15px;
+}
